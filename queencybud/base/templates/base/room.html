@@ -1,0 +1,61 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+
+        <h3>{{room.name}}</h3>
+        <small class="pb-2">{{room.description}}</small>
+
+        <div class="col-9">
+            
+        
+            <h5>Conversation</h5>
+            <hr>
+
+            {% for message in room_messages %}
+
+            <div>
+                {% if request.user == message.user %}
+                <a href="{% url 'delete-message' message.id %}">Delete</a>
+                <a href="{% url 'update-message' message.id %}">Edit</a>
+                {% endif %}
+                <small>@{{message.user}} {{message.created|timesince}} ago</small>
+                <p>{{message.body}}</p>
+                <hr>
+            </div> 
+
+            {% endfor %}
+
+            <div>
+                
+                {% if request.user.is_authenticated %}
+                <form method="post" action="">
+                    {% csrf_token %}
+                    {{form.as_p}}
+            
+                    <input type="text" name="body" placeholder="Join the conversation...">
+                </form>
+                {% endif %}
+            </div>
+
+        </div>
+
+        <div class="col-3">
+
+            <h3>Participants</h3>
+            <hr>
+
+            {% for participant in participants %}
+            <div>
+                <small>@{{participant}}</small>
+            </div>
+            {% endfor %}
+
+        </div>
+    
+</div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+
+{% extends 'main.html' %}
+
+<!-- {% load static %} -->
+
+{% block content %}
+
+<style>
+    .profile-container{
+        margin-top: 50px;
+    }
+</style>
+
+
+
+    <div class="container profile-container">
+
+    <!-- <img src="{% static 'images/baby_me.jpeg' %}"/>  -->
+
+
+        <h3 class="pb-3">About {{user.username}}</h3>
+
+        <div class="row">
+            
+            <div class="col-3">
+                {% include 'base/topics_component.html' %}
+            </div>
+    
+            <div class="col-6">
+    
+                {% include 'base/room_feed_component.html' %}
+                
+            </div>
+    
+            <div class="col-3">
+                
+                {% include 'base/activity_component.html' %}
+    
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
