@@ -3,12 +3,12 @@ The name of this project is HiQueency, a simple chat app created with Python(Usi
 
 # Table of Contents
 <hr>
--General Info
--Introduction
--Technologies/Tools
--Setup
--Status
--Sources
+- General Info
+- Introduction
+- Technologies/Tools
+- Setup
+- Status
+-Inspiration
 
 # General Info
 <hr>
@@ -43,7 +43,7 @@ Next, run the following command to create the application that will live inside 
 <hr>
 In progress..
 
-# Sorces
+# Inspiration
 <hr>
 This app is based on @Dennis Ivy's youtube course/tutorial called Figma(StudyBuddy)
 Although I will be using bootstrap for my themes just to practice what I've learned about bootstrap so far.
