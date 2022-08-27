@@ -3,12 +3,14 @@ The name of this project is HiQueency, a simple chat app created with Python(Usi
 
 # Table of Contents
 <hr>
-- General Info
-- Introduction
-- Technologies/Tools
-- Setup
-- Status
--Inspiration
+<li>
+    <ul>General Info</ul>
+    <ul>Introduction</ul>
+    <ul>Technologies/Tools</ul>
+    <ul>Setup</ul>
+    <ul>Status</ul>
+    <ul>Inspiration</ul>
+</li>
 
 # General Info
 <hr>
@@ -21,12 +23,14 @@ The idea is to create an application similar to discord / Search engine, where d
 # Technologies/Tools
 <hr>
 Project is created with:
-+ Django version: 4.1
-+ Python version: 3.10.2
-+ JavaScript
-+ Bootstrap 5
-+ Cascading Style Sheets(CSS)
-+ Hypertext Markup Language(HTML)
+<li>
+    <ul>Django version: 4.1</ul>
+    <ul>Python version: 3.10.2</ul>
+    <ul>JavaScript</ul>
+    <ul>Bootstrap 5</ul>
+    <ul>Cascading Style Sheets(CSS)</ul>
+    <ul>Hypertext Markup Language(HTML)</ul>
+</li>
 
 # Setup
 <hr>
